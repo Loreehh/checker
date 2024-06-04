@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-light">
 <link rel="stylesheet" href="style.css">
+
 <head>
     <title>Checker 1.0.0 by x2loreeh</title>
 </head>
 
 
-<nav>
-    <div class="theme-switch-wrapper">
-         <label class="theme-switch" for="checkbox">
-      <input type="checkbox" id="checkbox" />
-      <div class="slider round"></div>
-    </label>
-      <em>Enable Dark Mode!</em>
-    </div>
-  
-  </nav>
+
 <body>
+
+    <div class="containerz">
+        <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+    </div>
     <div class="container">
         <div class="titlez">
             <img src="./icon.png" alt="CheckerIcon" width="175" height="175">
@@ -26,6 +25,7 @@
     </div>
 
 
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="scripts.js"></script>
 
 
