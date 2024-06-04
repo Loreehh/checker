@@ -35,3 +35,18 @@ const menuChecker = [
         ]
     }
 ]
+
+if (process.env.NODE_ENV !="production") {
+    menuChecker.push({
+        label: "Dev Tools",
+        submenu: [
+            {
+                label: "Toggle DevTools",
+                accelerator: process.platform === "darwin" ? "Command+I" : "Ctrl+I",
+                click(item, focusedWindow) {
+                    focusedWindow.toggleDevTools();
+                }
+            }
+        ]
+    })
+}
