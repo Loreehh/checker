@@ -2,8 +2,8 @@ const {BrowserWindow, app, Menu, menu} = require('electron');
 
 const createWindow = () => {
     const window = new BrowserWindow({
-        width: 800,
-        height: 600
+        fullscreen: true,
+        icon: __dirname + '/icon.png',
     });
 
     const menu = Menu.buildFromTemplate(menuChecker);
@@ -24,13 +24,27 @@ const menuChecker = [
         submenu: [
             {
                 label: "Quit",
-                accelerator: process.platform === 'darwin' ? "Command+Q" : "Ctrl+Q",
+                accelerator: process.platform === 'darwin' ? "Command+Q" : "Ctrl+W",
                 click() {
                     app.quit();
                 }
             },
             {
                 role: "reload"
+            }
+        ]
+    },
+    {
+        label: "Themes",
+        submenu: [
+            {
+                label: "Light Theme"
+            },
+            {
+                label: "Dark Theme"
+            },
+            {
+                label: "Midnight Theme"
             }
         ]
     }
