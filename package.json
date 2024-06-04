@@ -1,0 +1,14 @@
+{
+  "name": "check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "x2loreeh",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.9"
+  }
+}
