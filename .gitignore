@@ -1,2 +1,4 @@
 
 /node_modules
+*.exe
+/appName-win32-x64

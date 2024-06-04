@@ -33,20 +33,6 @@ const menuChecker = [
                 role: "reload"
             }
         ]
-    },
-    {
-        label: "Themes",
-        submenu: [
-            {
-                label: "Light Theme"
-            },
-            {
-                label: "Dark Theme"
-            },
-            {
-                label: "Midnight Theme"
-            }
-        ]
     }
 ]
 
