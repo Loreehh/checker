@@ -4,6 +4,7 @@
 
 <head>
     <title>Checker 1.0.0 by x2loreeh</title>
+    
 </head>
 
 
@@ -15,16 +16,43 @@
         <div class="titlez">
             <img src="./icon.png" alt="CheckerIcon" width="175" height="175">
             <div class="containerz" style="padding-bottom: 5px;">
-            <label id="switch" class="switch">
-                <input type="checkbox" onchange="toggleTheme()" id="slider">
-                <span class="slider round"></span>
-            </label>
-    </div>
-            <h1 class="titlechecker">Checker</h1>
-            <h3>Benvento, cosa vuoi controllare oggi?</h3>
+                <label id="switch" class="switch">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+                <h1 class="titlechecker">Checker</h1>
+                <h3>Benvento, cosa vuoi controllare oggi?</h3>
         </div>
     </div>
     </div>
+
+
+        <script>
+            async function getCryptoData() {
+                const response = await fetch("Https://rest.coinapi.io/v1/assets",
+                {
+                    method: "GET",
+                    headers: { "X-CoinAPI-Key": "C217EFBD-DA4A-46BC-BECB-42C1EBD98574" },
+                });
+
+                const boxcurrency = document.getElementById("currencybox")
+                const coins = await response.json();
+                console.log(coins);
+
+            }
+            getCryptoData();
+        </script>
+
+    
+<table class="centered" id="cointable">
+    <thead>
+        <tr>
+            <th>Valuta</th>
+            <th>Prezzo Attuale</th>
+        </tr>
+    </thead>
+</table>
 </div>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
