@@ -1,4 +1,4 @@
-const {BrowserWindow, app, Menu, menu} = require('electron');
+const {BrowserWindow, app, Menu, menu, shell} = require('electron');
 
 const createWindow = () => {
     const window = new BrowserWindow({
@@ -22,6 +22,12 @@ const menuChecker = [
     {
         label: "Checker",
         submenu: [
+            {
+                label: "Changelogs",
+                click: () => {
+                    shell.openExternal("http://www.google.com")
+                }
+            },
             {
                 label: "Quit",
                 accelerator: process.platform === 'darwin' ? "Command+Q" : "Ctrl+W",
