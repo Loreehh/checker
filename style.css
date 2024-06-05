@@ -104,15 +104,8 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.containerz {
-    float: right;
-    padding-top: 6px;
-    padding-right: 5px;
-}
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
+.titlez img {
+  background: var(--color-secondary);
+  padding-top: 6px;
 }
