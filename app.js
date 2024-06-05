@@ -1,5 +1,4 @@
 const {BrowserWindow, app, Menu, menu, shell} = require('electron');
-
 const createWindow = () => {
     const window = new BrowserWindow({
         fullscreen: true,
@@ -26,6 +25,7 @@ const menuChecker = [
                 label: "Changelogs",
                 click: () => {
                     shell.openExternal("http://www.google.com")
+                    app.popup("hi")
                 }
             },
             {
@@ -56,3 +56,4 @@ if (process.env.NODE_ENV !="production") {
         ]
     })
 }
+
