@@ -20,8 +20,6 @@ html, body {
 }
 .sfondo {
   font-family: Poppins;
-  width: 100%;
-  height: 100%;
   background: var(--color-secondary);
 }
 .sfondo h1 {
@@ -71,8 +69,6 @@ html, body {
   top: 0;
   bottom: 0;
   margin: auto 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
   box-shadow: 0 0px 15px #2020203d;
   background: white url('https://i.ibb.co/FxzBYR9/night.png');
   background-repeat: no-repeat;
@@ -109,3 +105,21 @@ input:checked + .slider:before {
   background: var(--color-secondary);
   padding-top: 6px;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(85, 90, 94);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(39, 34, 34);
+}
+
+
+table.centered {
+  padding-top: 156px;
+}
+
