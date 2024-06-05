@@ -24,8 +24,7 @@ const menuChecker = [
             {
                 label: "Changelogs",
                 click: () => {
-                    shell.openExternal("http://www.google.com")
-                    app.popup("hi")
+                    shell.openExternal("https://github.com/Loreehh/checker");
                 }
             },
             {
