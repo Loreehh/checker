@@ -23,6 +23,8 @@ const menuChecker = [
         submenu: [
             {
                 label: "Changelogs",
+                accelerator: process.platform === 'darwin' ? "Command+M" :  "Ctrl+M",
+
                 click: () => {
                     shell.openExternal("https://github.com/Loreehh/checker");
                 }

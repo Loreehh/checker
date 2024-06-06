@@ -69,7 +69,6 @@ html, body {
 
 .slider:before {
   position: absolute;
-  content: "";
   height: 40px;
   width: 40px;
   left: 0px;
@@ -93,6 +92,7 @@ input:focus + .slider {
 
 input:checked + .slider:before {
   background: white;
+  left: 15px;
   background-repeat: no-repeat;
   background-position: center;
 }
