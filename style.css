@@ -128,3 +128,7 @@ table.centered {
   padding-top: 156px;
 }
 
+pre .content {
+  background: var(--color-secondary);
+}
+
