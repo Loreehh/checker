@@ -1,5 +1,4 @@
 # Checker👓
- Applicazione creata da x2loreeh per essere valutata 
 
 Versione **1.0.0**
 
@@ -17,7 +16,7 @@ Versione **1.0.0**
 
 ## Ciò che ti serve:
 
-- Node.JS (node> 20 || npm> 9.50)
+- Node.JS (node > 20 || npm > 9.50)
 - Package (Elencati precedentemente)
 - CoinAPI Key
 - Code Editor (Vscode....)
@@ -29,6 +28,8 @@ Versione **1.0.0**
 - CTRL + W -> Chiude l'applicazione
 - CTRL + R -> Ricarica l'applicazione senza dover chiuderla
 - CTRL + I -> Apre la console di DevTools
+- CTRL + M -> Apre la pagina dei release + Changelogs
+- CTRL + ? -> Apre questa pagina
 
 !! Tutte queste shortcuts sono state create pure per Mac e Linux !!
 
