@@ -31,7 +31,6 @@ html, body {
 .sfondo h3 {
   color: var(--font-color);
 }
-
 .sfondo tbody {
   color: var(--font-color);
 }
@@ -42,21 +41,17 @@ html, body {
   border: 0;
   border-radius: 5px;
 }
-
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
 }
-
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
-
 .slider {
   position: absolute;
   cursor: pointer;
@@ -66,7 +61,6 @@ html, body {
   bottom: 0;
   background-color: #ccc;
 }
-
 .slider:before {
   position: absolute;
   height: 40px;
@@ -81,54 +75,40 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 input:checked + .slider {
   background-color: #2196f3;
 }
-
 input:focus + .slider {
   box-shadow: 0 0 1px #2196f3;
 }
-
 input:checked + .slider:before {
   background: white;
   left: 15px;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .slider.round {
   border-radius: 30px;
 }
-
 .slider.round:before {
   border-radius: 50%;
 }
-
-
 .titlez img {
   background: var(--color-secondary);
   padding-top: 6px;
 }
-
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 ::-webkit-scrollbar-track {
   background: rgb(85, 90, 94);
 }
-
 ::-webkit-scrollbar-thumb {
   background: rgb(39, 34, 34);
 }
-
-
 table.centered {
   padding-top: 156px;
 }
-
 pre .content {
   background: var(--color-secondary);
 }
-
