@@ -2,6 +2,8 @@
 
 Versione **1.0.1**
 
+Checker é un'applicazione ideata da x2loreeh per controllare i prezzi in dollari USA delle criptovalute.
+
 
 ------------------------------------------------------------------------
 
