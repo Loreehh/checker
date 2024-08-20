@@ -24,13 +24,20 @@
                 <h1 class="titlechecker" style="font-family: Poppins;">Checker</h1>
                 <h3>Benvento, cosa vuoi controllare oggi?</h3>
                 <h8>La nostra applicazione usufruisce della tecnologia di ElectronJS e dell'API di CoinAPI, utilizzando le icone di Boxicons</h8>
-        </div>
+                <div class="search-container">
+                    <form class="search-form" action="#" method="get">
+                        <input type="text" placeholder="Cerca la criptovaluta | Search your crypto" class="search-input" id="searchInput" onkeyup="searchTable()">
+                    </form>
+                </div>
+            </div>
+
+
     <pre id="content" style="white-space: pre-wrap;"></pre>
     </div>
     <table class="centered" id="cointable" >
         <thead style="font-family: Poppins;">
             <tr>
-                <th class="centered" style="font-family: Poppins; padding-top: 156px;">💸Valuta</th>
+                <th class="centered" style="font-family: Poppins;padding-top: 156px;">💸Valuta</th>
                 <th class="centered" style="font-family: Poppins;padding-top: 156px;">💶Simbolo Valuta</th>
                 <th class="centered" style="font-family: Poppins;padding-top: 156px;">🫰Prezzo Attuale</th>
             </tr>
