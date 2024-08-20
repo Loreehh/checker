@@ -2,8 +2,8 @@ const {BrowserWindow, app, Menu, menu, shell} = require('electron');
 const { request } = require('request');
 const createWindow = () => {
     const window = new BrowserWindow({
-        width: 1820,
-        length: 1800,
+        width: 1920,
+        length: 1020,
         icon: __dirname + '/icon.png',
     });
     const menu = Menu.buildFromTemplate(menuChecker);
