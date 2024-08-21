@@ -33,14 +33,25 @@ const menuChecker = [
 
             },
             {
+                role: "reload"
+            },
+            {
                 label: "Quit",
                 accelerator: process.platform === 'darwin' ? "Command+Q" : "Ctrl+W",
                 click() {
                     app.quit();
                 }
-            },
+            }
+        ]
+    },
+    {
+        label: "Support",
+        submenu: [
             {
-                role: "reload"
+                label: "Donations",
+                click: () => {
+                    shell.openExternal("https://paypal.me/x2loreeh");
+                }
             }
         ]
     }
