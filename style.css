@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@keyframes myAnim {
+@keyframes heartanim {
 	0% {
 		opacity: 0;
 		transform: scale(0.6);
@@ -188,13 +188,9 @@ pre .content {
   padding-top: 7px;
 }
 
-.pref img {
-  
-}
-
 .pref img:hover {
   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAf1JREFUSEvl1jGI1FAQgOF/4m3ykgUtLK9RLGzO9ho7RVBUDiy00Uaw08bqxFbwsBEEO620UgQbCzkFsRGxUaxsFCs7i5PLe0nWHdlzc7ibbDZZN5zgltnHfDPzJi9P2KGf7JDLvwsr7Ep9/2AGC900/SigZV1S8DZ9f6kDPT9NPwn8rOrmxIo3g+CEwA1EDgGdYZAEeIvIamTtm8GzOAwPo7oGLAP+cF0GfPDgmnHuRVkCBVihY4NgDZGrlfuvehvP66B6ecq6W2GSXBfo/bmuAMdB8ASRM3MeukeRc+cmwtaY8woP5oz+DidyNrL2cR57u+LBEFljvgKLrcDwOXLuQAG2xhxReNkSuhVWPW+5G8fvthqQQ3EQXEHkTpuwwIXQuYcjsDVmVeFmm7DCpa5z98bhiwr3W4VVT3WT5Nk4vE/hS4twFjq3V+DHCDw8hZ6iutIKLnI3snb7sBk5QKwx+/vwXmD3nPFvme8v7dnY+F54nfIHw9fqObAwJ7wncDR07nXlkTn40wXBsb7IYAjyj8OsOWSe6kmTJOvjASZ+neaAT0QLwzWe1V/glehUeMa2T0VrwQ3xxFM9Xbantfd4hrbXRmtXnCdRseeJwPHQuVd1x7/xLbMEb4w2rrik8n7TSieeXHVbNbiFeiJp6NxMl4fGra6b2LR1/x/8C6zpxh8OT39BAAAAAElFTkSuQmCC");
-  animation: myAnim 0.5s ease 0s 1 normal forwards;
+  animation: heartanim 0.5s ease 0s 1 normal forwards;
 }
 
 

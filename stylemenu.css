@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    animation: text-focus-in 1.5s linear;
+  }
+  .theme-light {
+    --color-primary: #0060df;
+    --color-secondary: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #000000;
+  }
+  .theme-dark {
+    --color-primary: #17ed90;
+    --color-secondary: #2a2c2d;
+    --color-accent: #12cdea;
+    --font-color: #ffffff;
+  }
+  .sfondo {
+    font-family: Poppins;
+    background: var(--color-secondary);
+  }
+  .sfondo h1 {
+    color: var(--font-color);
+  }
+  .sfondo h2 {
+    color: var(--font-color);
+  }
+  .sfondo h3 {
+    color: var(--font-color);
+  }
+  .sfondo tbody {
+    color: var(--font-color);
+  }
+  .sfondo button {
+    color: var(--font-color);
+    background: var(--color-primary);
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+  }
+  .slider:before {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+  input:checked + .slider:before {
+    background: white;
+    left: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .slider.round {
+    border-radius: 30px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .titlez img {
+    background: var(--color-secondary);
+    padding-top: 6px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(85, 90, 94);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(39, 34, 34);
+  }
