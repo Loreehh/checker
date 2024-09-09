@@ -1,98 +1,141 @@
 <!DOCTYPE html>
 <html lang="en" class="theme-light">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
 
-<title>Checker 1.0.3 by x2loreeh</title>
+  <title>Checker 1.0.3 by x2loreeh</title>
 
-<body>
-<div class="sfondo">
-    <div class="pref">
-        <a href="test.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAodJREFUSEvNlk2ITlEYx39jhppmSLHRLIwkU2iyYGNBRON70kSJWfjYsWAzZKvIRsmSjZlpUGjIjJrxkY2UhY+SkWJWsvBRLHzG+U/Pq9Nxz73vve+tceqt9577nOf3fJ9bxyStukni8l+D64GFQAPwDPgdidIUYDHwExgDfqVFM83j9Q52HFgCTDUl34CHwBHgge2tAE4Cy4FptvcDeAIcBUaTDEgCCyJFhzPyf9oMOpAhdwo4ZpH4K5oE7gd2msRH4Dxw0543AvuAmQHsJSBDXtj+IuAQMN+ee4Fu/0wI3uWEJaR1G9jkwvo1gDS6sA4Bq2x/BNiSINdkBq80uR3A5YouH6wiGgdagE9AG/AuEsZmi4Re7wW+ROTmWKFNB14BC5LAq81LvVN+FboyVo/VjHQtc1F8pD++xweBM0ZqB56WQbVqVydo7Qb6QrBa5IQJzAbelwSeC7wxXfuBcyF4j5e3dYCKpoy1zc2CK6ZIxTrRIX6oW4HXXqUKXsa6ax2goTIL+ByC9XwN6DSaenmgRrJyesF0nHXpUx1NrLCP5znwY2CGmzayUP15qyBcI/e6zfi3Nsc/xMDaXwMM2zgsCu8AbhhUl4Z03vcdiF0SOjhoQ/87sDWH52utgDTzZbjG7D+FmnY7+VYLrtDdyQi7D9VNtjnWHVkfAsqxWkF3sWa2rI/BQ6gMvxczNAusc9XAc0GTqjpmoOBXAV0koee5oXnAku1yN9bFAC5DNIlUSMppanirqeqY59ttqOj7Sp4r9/qp+DZ4t1tm61eT41CJPL8ECK6Vy9O0AZJprbvU9aWiUVhpM83jXKuIxxXAUvP2eS5iZFYX0VHoTC0eFwLWmuOaoDr8B/UffB90yxnWAAAAAElFTkSuQmCC"/>
+  <body>
+    <div class="sfondo">
+      <div class="pref">
+        <a href="test.html"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAodJREFUSEvNlk2ITlEYx39jhppmSLHRLIwkU2iyYGNBRON70kSJWfjYsWAzZKvIRsmSjZlpUGjIjJrxkY2UhY+SkWJWsvBRLHzG+U/Pq9Nxz73vve+tceqt9577nOf3fJ9bxyStukni8l+D64GFQAPwDPgdidIUYDHwExgDfqVFM83j9Q52HFgCTDUl34CHwBHgge2tAE4Cy4FptvcDeAIcBUaTDEgCCyJFhzPyf9oMOpAhdwo4ZpH4K5oE7gd2msRH4Dxw0543AvuAmQHsJSBDXtj+IuAQMN+ee4Fu/0wI3uWEJaR1G9jkwvo1gDS6sA4Bq2x/BNiSINdkBq80uR3A5YouH6wiGgdagE9AG/AuEsZmi4Re7wW+ROTmWKFNB14BC5LAq81LvVN+FboyVo/VjHQtc1F8pD++xweBM0ZqB56WQbVqVydo7Qb6QrBa5IQJzAbelwSeC7wxXfuBcyF4j5e3dYCKpoy1zc2CK6ZIxTrRIX6oW4HXXqUKXsa6ax2goTIL+ByC9XwN6DSaenmgRrJyesF0nHXpUx1NrLCP5znwY2CGmzayUP15qyBcI/e6zfi3Nsc/xMDaXwMM2zgsCu8AbhhUl4Z03vcdiF0SOjhoQ/87sDWH52utgDTzZbjG7D+FmnY7+VYLrtDdyQi7D9VNtjnWHVkfAsqxWkF3sWa2rI/BQ6gMvxczNAusc9XAc0GTqjpmoOBXAV0koee5oXnAku1yN9bFAC5DNIlUSMppanirqeqY59ttqOj7Sp4r9/qp+DZ4t1tm61eT41CJPL8ECK6Vy9O0AZJprbvU9aWiUVhpM83jXKuIxxXAUvP2eS5iZFYX0VHoTC0eFwLWmuOaoDr8B/UffB90yxnWAAAAAElFTkSuQmCC"
+          />
         </a>
-        </div>
-    <div class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center" style="text-align: center;height: 418px;margin: 0px;padding-top: 35px;">
+      </div>
+      <div
+        class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center"
+        style="
+          text-align: center;
+          height: 418px;
+          margin: 0px;
+          padding-top: 35px;
+        "
+      >
         <div class="titlez">
-            <img src="./icon.png" alt="CheckerIcon" width="175" height="175">
-            <div class="containerz" style="padding-bottom: 5px;">
-                <img src="https://i.ibb.co/FxzBYR9/night.png" alt="1" style="animation: pulse 1s linear infinite">
-                <label id="switch" class="switch">
-                    <input type="checkbox" onchange="toggleTheme()" id="slider">
-                    <span class="slider round"></span>
-                </label>
-                <img src="https://i.ibb.co/7JfqXxB/sunny.png" alt="2">
-            </div>
-                <h1 class="titlechecker" style="font-family: Poppins;">Checker</h1>
-                <h3>Benvento, cosa vuoi controllare oggi?</h3>
-                <h8>La nostra applicazione usufruisce della tecnologia di ElectronJS e dell'API di CoinAPI, utilizzando le icone di Boxicons</h8>
-                <div class="search-container">
-                    <form class="search-form" action="#" method="get">
-                        <h5>🔍</h5>
-                        <input type="text" placeholder="Cerca la criptovaluta | Search your crypto" class="search-input" id="searchInput" onkeyup="searchTable()">
-                    </form>
-                </div>
-            </div>
+          <img src="./icon.png" alt="CheckerIcon" width="175" height="175" />
+          <div class="containerz" style="padding-bottom: 5px">
+            <img
+              src="https://i.ibb.co/FxzBYR9/night.png"
+              alt="1"
+              style="animation: pulse 1s linear infinite"
+            />
+            <label id="switch" class="switch">
+              <input type="checkbox" onchange="toggleTheme()" id="slider" />
+              <span class="slider round"></span>
+            </label>
+            <img src="https://i.ibb.co/7JfqXxB/sunny.png" alt="2" />
+          </div>
+          <h1 class="titlechecker" style="font-family: Poppins">Checker</h1>
+          <h3>Benvento, cosa vuoi controllare oggi?</h3>
+          <h8
+            >La nostra applicazione usufruisce della tecnologia di ElectronJS e
+            dell'API di CoinAPI, utilizzando le icone di Boxicons</h8
+          >
+          <div class="search-container">
+            <form class="search-form" action="#" method="get">
+              <h5>🔍</h5>
+              <input
+                type="text"
+                placeholder="Cerca la criptovaluta | Search your crypto"
+                class="search-input"
+                id="searchInput"
+                onkeyup="searchTable()"
+              />
+            </form>
+          </div>
+        </div>
 
-
-    <pre id="content" style="white-space: pre-wrap;"></pre>
-    </div>
-    <table class="centered" id="cointable" >
-        <thead style="font-family: Poppins;">
-            <tr>
-                <th class="centered" style="font-family: Poppins;padding-top: 156px;">💸Valuta</th>
-                <th class="centered" style="font-family: Poppins;padding-top: 156px;">💶Simbolo Valuta</th>
-                <th class="centered" style="font-family: Poppins;padding-top: 156px;">🫰Prezzo Attuale</th>
-            </tr>
+        <pre id="content" style="white-space: pre-wrap"></pre>
+      </div>
+      <table class="centered" id="cointable">
+        <thead style="font-family: Poppins">
+          <tr>
+            <th
+              class="centered"
+              style="font-family: Poppins; padding-top: 156px"
+            >
+              💸Valuta
+            </th>
+            <th
+              class="centered"
+              style="font-family: Poppins; padding-top: 156px"
+            >
+              💶Simbolo Valuta
+            </th>
+            <th
+              class="centered"
+              style="font-family: Poppins; padding-top: 156px"
+            >
+              🫰Prezzo Attuale
+            </th>
+          </tr>
         </thead>
-        <tbody id="tablebody" style="font-family: Poppins;"></tbody>
-    </table>
-    <div id="spinner" class="center-align" style="padding-top: 156px;">
+        <tbody id="tablebody" style="font-family: Poppins"></tbody>
+      </table>
+      <div id="spinner" class="center-align" style="padding-top: 156px">
         <div class="preloader-wrapper big active">
-            <div class="spinner-layer spinner-blue-only">
-              <div class="circle-clipper left">
-                <div class="circle"></div>
-              </div><div class="gap-patch">
-                <div class="circle"></div>
-              </div><div class="circle-clipper right">
-                <div class="circle"></div>
-              </div>
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
             </div>
           </div>
         </div>
+      </div>
     </div>
-    </div>
-        <script>
-            async function getCryptoData() {
-                const response = await fetch("Https://rest.coinapi.io/v1/assets",
-                {
-                    method: "GET",
-                    headers: { "X-CoinAPI-Key": "C217EFBD-DA4A-46BC-BECB-42C1EBD98574" },
-                });
 
-                const table = document.getElementById("tablebody");
-                const spinner = document.getElementById("spinner");
-                const coins = await response.json();
-                coins.forEach((currency) => {
-                    if(currency.type_is_crypto) {
-                        var rotHtml = `<tr><td>${currency.name}</td><td>${currency.asset_id}</td><td>${currency.price_usd}$</td></tr>`;
-                        var template = document.createElement("template");
-                        template.innerHTML = rotHtml;
-                        var rowElement = template.content.firstChild;
-                        table.appendChild(rowElement);
-                        
-                    }
-                });
+    <script>
+      async function getCryptoData() {
+        const response = await fetch("Https://rest.coinapi.io/v1/assets", {
+          method: "GET",
+          headers: { "X-CoinAPI-Key": "C217EFBD-DA4A-46BC-BECB-42C1EBD98574" },
+        });
 
-                spinner.parentElement.removeChild(spinner);
+        const table = document.getElementById("tablebody");
+        const spinner = document.getElementById("spinner");
+        const coins = await response.json();
+        coins.forEach((currency) => {
+          if (currency.type_is_crypto) {
+            var rotHtml = `<tr><td>${currency.name}</td><td>${currency.asset_id}</td><td>${currency.price_usd}$</td></tr>`;
+            var template = document.createElement("template");
+            template.innerHTML = rotHtml;
+            var rowElement = template.content.firstChild;
+            table.appendChild(rowElement);
+          }
+        });
 
-            }
-            getCryptoData();
-        </script>
+        spinner.parentElement.removeChild(spinner);
+      }
+      getCryptoData();
+    </script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
+  </body>
 </html>
