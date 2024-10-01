@@ -4,11 +4,11 @@ const createWindow = () => {
   const window = new BrowserWindow({
     width: 1920,
     length: 1020,
-    icon: __dirname + "/icon.png",
+    icon: __dirname + "/assets/icon.png",
   });
   const menu = Menu.buildFromTemplate(menuChecker);
   Menu.setApplicationMenu(menu);
-  window.loadFile("index.html");
+  window.loadFile("pages/homepage/index.html");
 };
 app.whenReady().then(() => {
   createWindow();
