@@ -1,5 +1,9 @@
 const { BrowserWindow, app, Menu, menu, shell } = require("electron");
 const { request } = require("request");
+const RPC = require('discord-rpc'); 
+const clientId = '1332076966748098580'; 
+
+let rpc;
 const createWindow = () => {
   const window = new BrowserWindow({
     width: 1920,
@@ -70,3 +74,25 @@ if (process.env.NODE_ENV != "production") {
     ],
   });
 }
+
+
+rpc = new RPC.Client({ transport: 'ipc' });
+
+    rpc.on('ready', () => {
+        console.log('Discord RPC is ready!');
+        rpc.setActivity({
+            details: 'Checker',
+            state: 'Checking some cryptocurrencies',
+            startTimestamp: Date.now(),
+            largeImageKey: 'logochecker',
+            largeImageText: 'https://github.com/x2loreeh/checker',
+            smallImageKey: 'icon',
+            smallImageText: 'https://github.com/x2loreeh/checker',
+            instance: true 
+        });
+    });
+
+    rpc.login({ clientId });
+    app.on('before-quit', () => {
+        rpc.destroy();
+    });
