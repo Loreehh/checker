@@ -1,6 +1,6 @@
-# Checker👓
+# Checker 👓
 
-Versione **1.0.3**
+Versione **1.0.5**
 
 Checker é un'applicazione ideata da x2loreeh per controllare i prezzi in dollari USA delle criptovalute.
 
@@ -13,6 +13,8 @@ Checker é un'applicazione ideata da x2loreeh per controllare i prezzi in dollar
 - Electron Packager
 - Electron-Utils
   (Tutti gli electron package elencati dovrebbero essere inclusi nel pacchetto electron)
+- Discord-RPC
+- Request
 
 ---
 
@@ -46,3 +48,9 @@ Le uniche cose che ti serviranno saranno [NodeJS](https://nodejs.org/) , un IDE 
 ## Come funziona?
 
 Checker è molto semplice da utilizzare, ti basterà semplicemente avviare l'applicazione e aspettare qualche secondo. Checker aggiornerà i propri dati ogni volta che l'utente riaprirà l'applicazione o la ricaricherà con CTRL+R. Esistono due temi: Light & Dark, creati per offrire una miglior esperienza all'utente. Questi temi possono essere cambiati dal bottone presente sotto al titolo.
+
+---
+
+## Discord
+
+Ora puoi mostrare ai tuoi amici che stai utilizzando Checker grazie alla nostra Discord Rich Presence integrata!
