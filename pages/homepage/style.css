@@ -63,7 +63,11 @@ body {
   transition: text-shadow 0.3s ease-in-out;
 }
 .titlechecker:hover {
-  text-shadow: 0 0 10px #0a06ca, 0 0 20px #0a06ca, 0 0 30px #0a06ca, 0 0 40px #0a06ca;
+  text-shadow:
+    0 0 10px #0a06ca,
+    0 0 20px #0a06ca,
+    0 0 30px #0a06ca,
+    0 0 40px #0a06ca;
 }
 .switch {
   position: relative;

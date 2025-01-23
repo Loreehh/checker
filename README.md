@@ -39,7 +39,7 @@ Checker é un'applicazione ideata da x2loreeh per controllare i prezzi in dollar
 
 ## Come lo sistemo?
 
-Le uniche cose che ti serviranno saranno [NodeJS](https://nodejs.org/) , un IDE (possibilmente con terminale come Visual Studio Code), e un poco di pazienza! Una volta aperto il terminale tramite command prompt o tramite il proprio IDE, ti basterà usare il comando nella cartella apposita ```npm install``` e da lì procederà automaticamente ad installare tutti i pacchetti necessari. Per avviare l'applicazione eseguire ```npm start```
+Le uniche cose che ti serviranno saranno [NodeJS](https://nodejs.org/) , un IDE (possibilmente con terminale come Visual Studio Code), e un poco di pazienza! Una volta aperto il terminale tramite command prompt o tramite il proprio IDE, ti basterà usare il comando nella cartella apposita `npm install` e da lì procederà automaticamente ad installare tutti i pacchetti necessari. Per avviare l'applicazione eseguire `npm start`
 
 ---
 
